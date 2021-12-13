@@ -19,17 +19,14 @@
             {{ prepend }}
           </template>
         </span>
-        <t-input
+        <input
           :id="name"
           v-model="value"
-          :type="type"
-          :placeholder="placeholder"
-          :autocomplete="autocomplete"
+          v-bind="$props"
           :class="{
             'error': errors,
           }"
-          :disabled="disabled"
-          @input="$emit('input', value);"
+          @input="$emit('input', value)"
           @keydown="$emit('keydown')"
         />
       </div>

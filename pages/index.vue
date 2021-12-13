@@ -6,7 +6,7 @@
         Welcome
       </h1>
       <p class="text-lg font-light">
-        This is just a dummy Vue template to build future projects on.
+        This is just a dummy Nuxt template to build future projects on.
       </p>
       <p class="text-sm">
         <a
@@ -30,6 +30,7 @@
         name="example-1"
         label="Regular input"
         placeholder="Input placeholder"
+        type="text"
       />
       <text-form-field
         name="example-2"
@@ -45,15 +46,15 @@
       />
       <fieldset>
         <div class="grid sm:grid-cols-3 gap-4">
-          <t-button>
+          <button>
             Submit
-          </t-button>
-          <t-button
+          </button>
+          <button
             class="loading"
             disabled
           >
             Loading
-          </t-button>
+          </button>
         </div>
       </fieldset>
     </form>
