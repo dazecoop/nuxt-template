@@ -3,10 +3,10 @@
   <div class="p-8">
     <div class="text-center">
       <h1>
-        Welcome
+        {{ $t(`${locale}.intro.title`, { siteName: $siteName }) }}
       </h1>
       <p class="text-lg font-light">
-        This is just a dummy Nuxt template to build future projects on.
+        {{ $t(`${locale}.intro.p-1`) }}
       </p>
       <p class="text-sm">
         <a
@@ -27,18 +27,21 @@
     <form class="max-w-md mx-auto">
       <h2>Form example</h2>
       <text-form-field
+        v-model="form.example_1"
         name="example-1"
         label="Regular input"
         placeholder="Input placeholder"
         type="text"
       />
       <text-form-field
+        v-model="form.example_2"
         name="example-2"
         label="Has an error"
         placeholder="Input with error"
         errors="Please enter a value"
       />
       <text-form-field
+        v-model="form.example_3"
         name="example-3"
         label="Input with prepend"
         placeholder="Input with prepend"
@@ -57,6 +60,7 @@
           </button>
         </div>
       </fieldset>
+      <pre class="bg-gray-100 p-4 text-sm text-gray-500">{{ form }}</pre>
     </form>
 
     <hr class="my-8" />
@@ -92,6 +96,12 @@ export default {
   name: 'Index',
   components: {
     TextFormField,
+  },
+  data() {
+    return {
+      locale: 'pages.index',
+      form: {},
+    };
   },
   head: {
     title: 'Home page',

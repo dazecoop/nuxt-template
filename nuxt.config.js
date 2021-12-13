@@ -50,8 +50,24 @@ export default {
     },
   },
 
+  /**
+   * i18n
+   * @source https://i18n.nuxtjs.org/setup
+   */
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: require('./locales/en.json'),
+      }
+    },
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/i18n',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
