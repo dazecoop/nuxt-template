@@ -21,10 +21,12 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/main.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/global-variables.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -34,7 +36,19 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
+    '@nuxtjs/fontawesome',
   ],
+
+  /**
+   * Font Awesome
+   */
+  fontawesome: {
+    icons: {
+      solid: ['faUserSecret'],
+      brands: ['faGithub', 'faTwitter'],
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -42,5 +56,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
   }
 }
