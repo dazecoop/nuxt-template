@@ -1,8 +1,14 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
+  /**
+   * Target
+   * @info https://go.nuxtjs.dev/config-target
+   */
   target: 'static',
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  /**
+   * Global page headers
+   * @info https://go.nuxtjs.dev/config-head
+   */
   head: {
     title: 'nuxt-template',
     htmlAttrs: {
@@ -19,24 +25,36 @@ export default {
     ],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
+  /**
+   * Global CSS
+   * @info https://go.nuxtjs.dev/config-css
+   */
   css: [
     '~/assets/main.scss',
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  /**
+   * Plugins to run before rendering page
+   * @info https://go.nuxtjs.dev/config-plugins
+   */
   plugins: [
     '~/plugins/global-variables.js',
     '~/plugins/filters.js',
+    '~/plugins/smooth-scroll.js',
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  /**
+   * Auto import components
+   * @info https://go.nuxtjs.dev/config-components
+   */
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  /**
+   * Modules for dev and build (recommended)
+   * @info https://go.nuxtjs.dev/config-modules
+   */
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
     '@nuxt/postcss8',
     '@nuxtjs/fontawesome',
     '@nuxtjs/moment',
@@ -67,13 +85,19 @@ export default {
     },
   },
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  /**
+   * Modules
+   * @info https://go.nuxtjs.dev/config-modules
+   */
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/axios',
   ],
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+  /**
+   * Build Configuration
+   * @info https://go.nuxtjs.dev/config-build
+   */
   build: {
     postcss: {
       plugins: {
