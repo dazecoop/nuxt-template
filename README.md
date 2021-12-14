@@ -11,8 +11,8 @@
 
 ## ⚙️ Installation
 - `npm install` to install dependencies
-## 🏃‍♂️ Running locally
+## 🏃 Running locally
 - `npm run dev`
 
-## 🏃‍♂️ Generate static site for production
+## 🎉 Generate static site for production
 - `npm run generate`
