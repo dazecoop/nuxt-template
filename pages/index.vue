@@ -96,15 +96,8 @@
 </template>
 
 <script>
-import TextareaFormField from '../components/Atoms/Form/TextareaFormField.vue';
-import TextFormField from '../components/Atoms/Form/TextFormField.vue';
-
 export default {
   name: 'Index',
-  components: {
-    TextareaFormField,
-    TextFormField,
-  },
   data() {
     return {
       locale: 'pages.index',

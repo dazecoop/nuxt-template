@@ -47,7 +47,11 @@ export default {
    * Auto import components
    * @info https://go.nuxtjs.dev/config-components
    */
-  components: true,
+  components: [
+    '~/components',
+    '~/components/Atoms',
+    '~/components/Atoms/Form',
+  ],
 
   /**
    * Modules for dev and build (recommended)
