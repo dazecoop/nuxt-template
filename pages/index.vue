@@ -1,5 +1,4 @@
 <template>
-  <!-- eslint-disable max-len -->
   <div class="p-8">
     <div class="text-center">
       <h1>
@@ -22,7 +21,7 @@
       </p>
     </div>
 
-    <hr class="my-8" />
+    <hr class="my-8">
 
     <form class="max-w-md mx-auto">
       <h2>Form example</h2>
@@ -63,7 +62,7 @@
       <pre class="bg-gray-100 p-4 text-sm text-gray-500">{{ form }}</pre>
     </form>
 
-    <hr class="my-8" />
+    <hr class="my-8">
 
     <div class="max-w-md mx-auto">
       <h2>Table example</h2>
@@ -109,8 +108,8 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Home page description'
-      }
+        content: 'Home page description',
+      },
     ],
   },
 }
