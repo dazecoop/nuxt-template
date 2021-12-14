@@ -38,6 +38,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
     '@nuxtjs/fontawesome',
+    '@nuxtjs/moment',
   ],
 
   /**
