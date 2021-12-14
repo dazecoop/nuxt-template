@@ -6,6 +6,14 @@ export default {
   target: 'static',
 
   /**
+   * Dist directory
+   * @info https://nuxtjs.org/docs/directory-structure/dist/
+   */
+  generate: {
+    dir: 'public_html',
+  },
+
+  /**
    * Global page headers
    * @info https://go.nuxtjs.dev/config-head
    */
