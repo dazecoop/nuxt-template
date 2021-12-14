@@ -46,6 +46,13 @@
         placeholder="Input with prepend"
         prepend="icon-user-secret"
       />
+      <textarea-form-field
+        v-model="form.example_4"
+        name="example-4"
+        label="Textarea"
+        placeholder="Textarea"
+        rows="4"
+      />
       <fieldset>
         <div class="grid sm:grid-cols-3 gap-4">
           <button>
@@ -89,11 +96,13 @@
 </template>
 
 <script>
+import TextareaFormField from '../components/Atoms/Form/TextareaFormField.vue';
 import TextFormField from '../components/Atoms/Form/TextFormField.vue';
 
 export default {
   name: 'Index',
   components: {
+    TextareaFormField,
     TextFormField,
   },
   data() {
