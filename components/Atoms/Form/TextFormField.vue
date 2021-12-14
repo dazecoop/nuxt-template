@@ -12,7 +12,10 @@
         <span v-if="prepend">
           <template v-if="prepend.startsWith('icon-')">
             <font-awesome-icon
-              :icon="['fa', prepend.substring(5)]"
+              :icon="[
+                prepend.startsWith('icon-fab') ? 'fab' : 'fa',
+                prepend.startsWith('icon-fab') ? prepend.substring(9) : prepend.substring(5)
+              ]"
             />
           </template>
           <template v-else>
@@ -28,7 +31,7 @@
           }"
           @input="$emit('input', value)"
           @keydown="$emit('keydown')"
-        />
+        >
       </div>
 
       <div
@@ -80,7 +83,7 @@ export default {
       default: 'text',
       validator: (value) => {
         return ['text', 'tel', 'email', 'number', 'password', 'search', 'url'].indexOf(value) !== -1
-      }
+      },
     },
   },
   data() {
