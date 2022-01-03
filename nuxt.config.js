@@ -48,7 +48,7 @@ export default {
   plugins: [
     '~/plugins/global-variables.js',
     '~/plugins/filters.js',
-    '~/plugins/smooth-scroll.js',
+    '~/plugins/plugins.js',
   ],
 
   /**
